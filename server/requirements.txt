@@ -1,8 +1,8 @@
 # Updated dependencies to fix security vulnerabilities
-# Generated: 2026-03-22
+# Generated: 2026-07-28
 
 aiofiles==24.1.0
-aiohttp==3.13.4
+aiohttp>=3.14.1
 aiosignal==1.3.1
 APScheduler==3.10.4
 async-timeout==4.0.3
@@ -11,17 +11,17 @@ beautifulsoup4==4.12.3
 charset-normalizer==3.3.2
 ctpwrapper==6.6.9.1
 Cython==3.0.7
-dynaconf==3.2.4
+dynaconf>=3.2.13
 frozenlist==1.4.1
 html5tagger==1.3.0
 httptools==0.6.1
-idna==3.6
+idna>=3.15
 multidict==6.0.4
 pandas==2.1.4
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
 pyyaml==6.0.1
-requests==2.31.0
+requests>=2.33.0
 sanic==23.6.0
 sanic-routing==23.6.0
 six==1.16.0
@@ -29,7 +29,7 @@ tracerite==1.1.1
 tushare==1.2.89
 tzdata==2023.4
 tzlocal==5.2
-ujson==5.8.0
+ujson>=5.13.0
 uvloop==0.19.0
 websockets==12.0
 yarl==1.9.4
