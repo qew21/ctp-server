@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AutoComplete, Radio, Select, InputNumber, Button, message, Table } from 'antd';
 import api from '../utils/Request';
-import { useRefresh } from '../utils/Context';
+import { useRefresh } from '../utils/RefreshContext.js';
 
 
 
@@ -80,13 +80,13 @@ const OrderForm = () => {
             title: 'Bid',
             dataIndex: 'bid',
             key: 'bid',
-            render: bid => <a onClick={() => setPrice(bid[0])}>{`${bid[0]} (${bid[1]})`}</a>, // 显示为 "价格 (数量)"
+            render: bid => <Button type="link" onClick={() => setPrice(bid[0])}>{`${bid[0]} (${bid[1]})`}</Button>, // 显示为 "价格 (数量)"
         },
         {
             title: 'Ask',
             dataIndex: 'ask',
             key: 'ask',
-            render: ask => <a onClick={() => setPrice(ask[0])}>{`${ask[0]} (${ask[1]})`}</a>, // 显示为 "价格 (数量)"
+            render: ask => <Button type="link" onClick={() => setPrice(ask[0])}>{`${ask[0]} (${ask[1]})`}</Button>, // 显示为 "价格 (数量)"
         },
     ];
 

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import api from '../../utils/Request';
-import { useRefresh } from '../../utils/Context';
+import { useRefresh } from '../../utils/RefreshContext.js';
 import { Table, Button } from 'antd';
 
 const OrdersTable = () => {
