@@ -1,0 +1,8 @@
+default:
+    investor_id: ""
+    broker_id: "10010"
+    password: ""
+    md_server: tcp://210.14.72.12:4602
+    trader_server: tcp://210.14.72.12:4600
+    app_id : ctp_server
+    auth_code : "0000000000000000"
